@@ -7,28 +7,28 @@
 class Sparklebios < Formula
   desc "A 1995 POST screen for your terminal that is secretly a health check"
   homepage "https://github.com/reactivepixels/sparklebios"
-  version "0.1.0"
+  version "0.1.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/reactivepixels/sparklebios/releases/download/v#{version}/bios-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "a9b36f29cdadb021344d5d9a069a89007a784c7fd477f69712683a819f072a8f"
+      sha256 "de6ca24196fa79c18168f5da6b98f7839b6894b6b4850d095c1a65f19e2544c5"
     end
     on_intel do
       url "https://github.com/reactivepixels/sparklebios/releases/download/v#{version}/bios-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "0bb1e90a15fd54bd5e9ddf175987a6da368f6fd49cd9077322c16a124df9c3cb"
+      sha256 "f45cd6acc39a63507cdbb8a0f51b336a446da55c2f4d7ceb43afa378ec7fd7df"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/reactivepixels/sparklebios/releases/download/v#{version}/bios-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "783d703f054b3256bc0a334e4c8f8991e315a3a90130504a058f81af38b4598e"
+      sha256 "ad3b8f8926f5d6b88c4892e063fb7f462d39046d8272c682ff9107767145a836"
     end
     on_intel do
       url "https://github.com/reactivepixels/sparklebios/releases/download/v#{version}/bios-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2340c66be4c6be0ec520fbc7f874b4ca9fc2625936eff98effd28c2f1c92d734"
+      sha256 "f1fb079cce0cc51630a41797525ffe7ee14ca262b658bf08d1d2c1e563a7c19a"
     end
   end
 
